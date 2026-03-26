@@ -48,8 +48,8 @@ command: |
     --load-format fastsafetensors \
     --attention-backend flashinfer \
     --generation-config vllm \
-    --compilation-config '{"pass_config":{"fuse_act_quant":false}}' \
+    --compilation-config '{{"pass_config":{{"fuse_act_quant":false}}}}' \
     --chat-template unsloth.jinja \
-    --default-chat-template-kwargs '{"enable_thinking":false}' \
+    --default-chat-template-kwargs '{{"enable_thinking":false}}' \
     --enable-request-id-headers \
     --trust-remote-code
